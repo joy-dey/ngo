@@ -1,0 +1,16 @@
+mixin generateSocialPages(icon, url)
+    li.social-icon-items.list-inline-item
+        a.social-link(href=`${url}`, title=`Visit Disha Trust on ${icon}`)
+            i(class=`mdi mdi-${icon}`)
+
+mixin generateNavOptions(title, url)
+    li.nav-item(role="presentation")
+        a.nav-link(href=`${url}`) #{title}
+
+mixin generateStats(title, value, icon)
+    .stats-item.col-md-3.text-center
+        i(class=`mdi mdi-${icon}`)
+        p.h2.fw-bold.stats-counter(data-target=`${value}`) 0
+        p #{title}
+
+mixin 

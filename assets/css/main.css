@@ -1,0 +1,166 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+h1 {
+  font-family: 'Sora', sans-serif;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: 'Sora', sans-serif;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: 'Sora', sans-serif;
+  font-weight: 700;
+}
+
+h4 {
+  font-family: 'Sora', sans-serif;
+  font-weight: 700;
+}
+
+h5 {
+  font-family: 'Sora', sans-serif;
+  font-weight: 700;
+}
+
+h6 {
+  font-family: 'Sora', sans-serif;
+  font-weight: 700;
+}
+
+.font-weight-bold {
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: #e87c06;
+  border-color: #e87c06;
+}
+
+.btn-primary:hover {
+  background-color: #e87c06;
+  border-color: #e87c06;
+}
+
+.btn-primary:focus {
+  background-color: #e87c06;
+  border-color: #e87c06;
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(232, 124, 6, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(232, 124, 6, 0.5);
+}
+
+.btn-outline-primary {
+  color: #e87c06;
+  border-color: #e87c06;
+}
+
+.btn-outline-primary:hover {
+  background-color: #e87c06;
+  border-color: #e87c06;
+}
+
+.btn-outline-primary:focus {
+  background-color: #e87c06;
+  border-color: #e87c06;
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(232, 124, 6, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(232, 124, 6, 0.5);
+}
+
+.main-header {
+  background-color: #e87c06;
+}
+
+.main-header .top-bar {
+  font-size: 14px;
+  color: #fff;
+}
+
+.main-header .top-bar a {
+  color: #fff !important;
+}
+
+.main-header .navbar .navbar-brand {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.main-header .navbar .navbar-toggler {
+  font-size: 1.4rem;
+}
+
+.main-header .navbar .navbar-toggler:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+.main-header .navbar .nav-item .nav-link {
+  color: rgba(0, 0, 0, 0.55);
+  -webkit-transition: none;
+  transition: none;
+}
+
+.main-header .navbar .nav-item:hover {
+  background-color: #e87c06;
+}
+
+.main-header .navbar .nav-item:hover .nav-link {
+  color: #fff;
+}
+
+main .hero-section {
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ebf6e5;
+  color: #fff;
+  position: relative;
+  text-align: center;
+  background-image: url("https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+main .hero-section::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+main .hero-section .container {
+  -webkit-filter: brightness(1);
+          filter: brightness(1);
+}
+
+main .stats-section {
+  padding: 2rem 0;
+  background-color: #2fb36a;
+  color: #fff;
+}
+
+main .stats-section .stats-holder {
+  text-align: center;
+  width: 100%;
+}
+
+main .stats-section .stats-holder .stats-item i {
+  font-size: 2rem;
+}

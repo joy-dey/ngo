@@ -1,0 +1,124 @@
+@import './colors';
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+@for $index from 1 to 7 {
+    h#{$index} {
+        font-family: 'Sora', sans-serif;
+        font-weight: 700;
+    }
+}
+
+.font-weight-bold {
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: $primary;
+    border-color: $primary;
+    &:hover {
+        background-color: $primary;
+        border-color: $primary;
+    }
+    &:focus {
+        background-color: $primary;
+        border-color: $primary;
+        box-shadow: 0 0 0 .25rem rgba($color: $primary, $alpha: 0.5);
+    }
+}
+
+.btn-outline-primary {
+    color: $primary;
+    border-color: $primary;
+    &:hover {
+        background-color: $primary;
+        border-color: $primary;
+    }
+    &:focus {
+        background-color: $primary;
+        border-color: $primary;
+        box-shadow: 0 0 0 .25rem rgba($color: $primary, $alpha: 0.5);
+    }
+}
+
+.main-header {
+    background-color: $primary;
+    .top-bar {
+        font-size: 14px;
+        color: #fff;
+        a {
+            color: #fff !important;
+        }
+    }
+    .navbar {
+        .navbar-brand {
+            color: rgba($color: #000000, $alpha: 0.9);
+        }
+        .navbar-toggler {
+            font-size: 1.4rem;
+            &:focus {
+                box-shadow: 0 0 0 .25rem rgba($color: #000000, $alpha: 0.25);
+            }
+        }
+        .nav-item {
+            .nav-link {
+                color: rgba($color: #000000, $alpha: 0.55);
+                transition: none;
+            }
+            &:hover {
+                background-color: $primary;
+                .nav-link {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+main {
+    .hero-section {
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ebf6e5;
+        color: #fff;
+        position: relative;
+        text-align: center;
+        background-image: url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80');
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        &::before {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            content: '';
+            background-color: rgba(0, 0, 0, .55);
+        }
+        .container {
+            filter: brightness(1);
+        }
+    }
+    .stats-section {
+        padding: 2rem 0;
+        background-color: $success;
+        color: #fff;
+        .stats-holder {
+            text-align: center;
+            width: 100%;
+            .stats-item {
+                i {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}

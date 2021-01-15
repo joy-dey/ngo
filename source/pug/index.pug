@@ -1,0 +1,20 @@
+extend ../template/template
+block main
+    main
+        .hero-section
+            .container.d-flex.justify-content-center.align-items-center.flex-column
+                h1.display-3 Welcome to #{websiteName}
+                p #{orgGoal}
+                .row
+                    button.btn.btn-primary.rounded-pill.text-uppercase.btn-lg.fw-bold
+                        i.mdi.mdi-handshake.me-2
+                        | become a volunteer
+        .stats-section
+            .container-fluid
+                .stats-holder.row.mx-auto
+                    each stat in stats
+                        +generateStats(stat.name, stat.value, stat.icon)
+        .causes-section
+            .container
+                .row
+                    
