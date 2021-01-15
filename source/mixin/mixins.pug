@@ -14,9 +14,9 @@ mixin generateStats(title, value, icon)
         p #{title}
 
 mixin generateCauses(title, amount, image, description)
-    .col-md-3
+    .col-md-4
         .card.causes-card
-            img.img-fluid(src=`${image}`)
+            img.img-fluid(src=`assets/img/${image}.jpg`)
             .cause-heading
                 h6.text-capitalize #{title}
                 p.text-capitalize.mb-0 we need to collect #{amount}
