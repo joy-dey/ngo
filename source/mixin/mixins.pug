@@ -23,3 +23,13 @@ mixin generateCauses(title, amount, image, description)
             .overlay-text
                 p #{description}
                 p.h2 #{amount}
+mixin generateCauses(title, amount, image, description)
+    .col-md-3
+        .card.causes-card
+            img.img-fluid(src=`${image}`)
+            .cause-heading
+                h6.text-capitalize #{title}
+                p.text-capitalize.mb-0 we need to collect #{amount}
+            .overlay-text
+                p #{description}
+                p.h2 #{amount}
