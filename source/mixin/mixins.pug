@@ -8,9 +8,18 @@ mixin generateNavOptions(title, url)
         a.nav-link(href=`${url}`) #{title}
 
 mixin generateStats(title, value, icon)
-    .stats-item.col-md-3.text-center
+    .stats-item.col-6.col-md-3.text-center
         i(class=`mdi mdi-${icon}`)
         p.h2.fw-bold.stats-counter(data-target=`${value}`) 0
         p #{title}
 
-mixin 
+mixin generateCauses(title, amount, image, description)
+    .col-md-3
+        .card.causes-card
+            img.img-fluid(src=`${image}`)
+            .cause-heading
+                h6.text-capitalize #{title}
+                p.text-capitalize we need to collect #{amount}
+            .overlay-text
+                p #{description}
+                p.h2 #{amount}

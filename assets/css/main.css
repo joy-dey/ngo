@@ -164,3 +164,43 @@ main .stats-section .stats-holder {
 main .stats-section .stats-holder .stats-item i {
   font-size: 2rem;
 }
+
+main .causes-section .causes-card {
+  position: relative;
+}
+
+main .causes-section .causes-card .cause-heading {
+  position: absolute;
+  color: #333;
+  padding: 18px;
+  background-color: rgba(255, 255, 255, 0.85);
+  width: 100%;
+  bottom: 8px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+main .causes-section .causes-card .overlay-text {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.85);
+  height: 96%;
+  width: 96%;
+  top: 2%;
+  left: 2%;
+  padding: 50px 25px;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+main .causes-section .causes-card:hover .overlay-text {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+main .causes-section .causes-card:hover .cause-heading {
+  bottom: -100px;
+}

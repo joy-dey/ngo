@@ -121,4 +121,38 @@ main {
             }
         }
     }
+    .causes-section {
+        .causes-card {
+            position: relative;
+            .cause-heading {
+                position: absolute;
+                color: #333;
+                padding: 18px;
+                background-color: rgba($color: #ffffff, $alpha: 0.85);
+                width: 100%;
+                bottom: 8px;
+                transition: all .3s ease;
+            }
+            .overlay-text {
+                position: absolute;
+                background-color: rgba($color: #ffffff, $alpha: 0.85);
+                height: 96%;
+                width: 96%;
+                top: 2%;
+                left: 2%;
+                padding: 50px 25px;
+                transform: translate(-50%);
+                transform: scale(0);
+                transition: all .3s ease;
+            }
+            &:hover {
+                .overlay-text {
+                    transform: scale(1);
+                }
+                .cause-heading {
+                    bottom: -100px;
+                }
+            }
+        }
+    }
 }

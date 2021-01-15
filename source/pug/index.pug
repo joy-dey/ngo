@@ -17,4 +17,5 @@ block main
         .causes-section
             .container
                 .row
-                    
+                    each cause in nonprofitCauses
+                        +generateCauses(cause.title, cause.amount, cause.img, cause.description)
