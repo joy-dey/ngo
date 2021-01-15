@@ -167,6 +167,7 @@ main .stats-section .stats-holder .stats-item i {
 
 main .causes-section .causes-card {
   position: relative;
+  overflow: hidden;
 }
 
 main .causes-section .causes-card .cause-heading {

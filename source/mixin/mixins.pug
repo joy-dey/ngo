@@ -19,7 +19,7 @@ mixin generateCauses(title, amount, image, description)
             img.img-fluid(src=`${image}`)
             .cause-heading
                 h6.text-capitalize #{title}
-                p.text-capitalize we need to collect #{amount}
+                p.text-capitalize.mb-0 we need to collect #{amount}
             .overlay-text
                 p #{description}
                 p.h2 #{amount}

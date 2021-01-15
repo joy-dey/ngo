@@ -124,6 +124,7 @@ main {
     .causes-section {
         .causes-card {
             position: relative;
+            overflow: hidden;
             .cause-heading {
                 position: absolute;
                 color: #333;
