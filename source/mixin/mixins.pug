@@ -1,6 +1,6 @@
 mixin generateSocialPages(icon, url)
     li.social-icon-items.list-inline-item
-        a.social-link(href=`${url}`, title=`Visit Disha Trust on ${icon}`)
+        a.social-link.text-white(href=`${url}`, title=`Visit Disha Trust on ${icon}`)
             i(class=`mdi mdi-${icon}`)
 
 mixin generateNavOptions(title, url)
@@ -14,7 +14,7 @@ mixin generateStats(title, value, icon)
         p #{title}
 
 mixin generateCauses(title, amount, image, description)
-    .col-md-4
+    .col-md-4.mb-4
         .card.causes-card
             img.img-fluid(src=`assets/img/${image}.jpg`)
             .cause-heading
@@ -23,3 +23,12 @@ mixin generateCauses(title, amount, image, description)
             .overlay-text
                 p #{description}
                 p.h2 #{amount}
+
+mixin generateFooterLinks(title, url)
+    li(role="presentation")
+        a.nav-link(href=`${url}`) #{title}
+
+mixin topBanner(img,title)
+    .heading-banner.d-flex-justify-content-center.align-items-center(style=`background-image: url(assets/img/${img}.jpg)`)
+        .container.text-center
+            h1.text-dark.mb-0 #{title}

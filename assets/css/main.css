@@ -7,31 +7,37 @@ body {
 h1 {
   font-family: 'Sora', sans-serif;
   font-weight: 700;
+  color: #272727;
 }
 
 h2 {
   font-family: 'Sora', sans-serif;
   font-weight: 700;
+  color: #272727;
 }
 
 h3 {
   font-family: 'Sora', sans-serif;
   font-weight: 700;
+  color: #272727;
 }
 
 h4 {
   font-family: 'Sora', sans-serif;
   font-weight: 700;
+  color: #272727;
 }
 
 h5 {
   font-family: 'Sora', sans-serif;
   font-weight: 700;
+  color: #272727;
 }
 
 h6 {
   font-family: 'Sora', sans-serif;
   font-weight: 700;
+  color: #272727;
 }
 
 .font-weight-bold {
@@ -116,6 +122,28 @@ a {
   color: #fff;
 }
 
+.section-padding {
+  padding: 60px 20px;
+}
+
+.section-title {
+  position: relative;
+  text-align: center;
+}
+
+.section-title::before {
+  position: absolute;
+  content: '';
+  width: 14px;
+  height: 14px;
+  background-color: #c4c4c4;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  bottom: -23px;
+  left: 50%;
+  z-index: 11;
+}
+
 main .hero-section {
   height: 600px;
   display: -webkit-box;
@@ -151,7 +179,6 @@ main .hero-section .container {
 }
 
 main .stats-section {
-  padding: 2rem 0;
   background-color: #2fb36a;
   color: #fff;
 }
@@ -159,6 +186,10 @@ main .stats-section {
 main .stats-section .stats-holder {
   text-align: center;
   width: 100%;
+}
+
+main .stats-section .stats-holder .stats-item {
+  padding: 2rem 0;
 }
 
 main .stats-section .stats-holder .stats-item i {
@@ -204,4 +235,44 @@ main .causes-section .causes-card:hover .overlay-text {
 
 main .causes-section .causes-card:hover .cause-heading {
   bottom: -100px;
+}
+
+main .how-to-help {
+  background-color: #e87c06;
+}
+
+main .how-to-help .hth-card {
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+main .how-to-help .hth-card:nth-child(3) {
+  border-left: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+main .how-to-help .hth-card:nth-child(4) {
+  border-left: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+footer .footer-icons li .social-link {
+  font-size: 2rem;
+}
+
+footer .footer-links a {
+  color: #fff;
+}
+
+footer .developer-credits {
+  padding: 1rem 0;
+  background-color: #1e2125;
+}
+
+footer .developer-credits .dev-branding {
+  width: 100px;
+}
+
+@media (max-width: 767px) {
+  main .how-to-help .hth-card {
+    border: 0 !important;
+  }
 }
