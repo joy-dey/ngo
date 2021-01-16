@@ -95,6 +95,14 @@ a {
   color: #fff !important;
 }
 
+.main-header .top-bar .qr-trigger {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+
 .main-header .navbar .navbar-brand {
   color: rgba(0, 0, 0, 0.9);
 }
@@ -271,8 +279,74 @@ footer .developer-credits .dev-branding {
   width: 100px;
 }
 
+footer .payment-qr {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 120px;
+  border: 0;
+  -webkit-box-shadow: 0 4px 15px -5px rgba(0, 0, 0, 0.55);
+          box-shadow: 0 4px 15px -5px rgba(0, 0, 0, 0.55);
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+footer .payment-qr .close-btn {
+  right: 0px;
+  top: -25px;
+  color: #fff;
+  z-index: 10;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+footer .payment-qr .card-body {
+  padding: 0;
+  position: relative;
+}
+
+footer .payment-qr .card-body .qr {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem;
+}
+
+footer .payment-qr .card-body .loader {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #e87c06;
+  border-radius: 50%;
+  position: absolute;
+  border-left-color: rgba(232, 124, 6, 0.25);
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(0);
+          transform: translate(-50%, -50%) rotate(0);
+  -webkit-animation: loading 1s ease infinite;
+          animation: loading 1s ease infinite;
+}
+
 @media (max-width: 767px) {
   main .how-to-help .hth-card {
     border: 0 !important;
+  }
+}
+
+@-webkit-keyframes loading {
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+            transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes loading {
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+            transform: translate(-50%, -50%) rotate(360deg);
   }
 }

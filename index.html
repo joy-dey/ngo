@@ -24,7 +24,7 @@
               <p class="mb-0"><i class="mdi mdi-email text-white me-2"></i><a href="mailto:support@dishatrust.in">support@dishatrust.in</a></p>
               <p class="mb-0"><i class="mdi mdi-phone text-white me-2"></i><a href="tel:+9111234567890">+91-11234567890</a></p>
             </div>
-            <div class="col-lg-5 my-2 my-lg-0 d-flex justify-content-center align-items-center justify-content-lg-end"><a class="text-uppercase fw-bold me-2" href="">gallery</a><span class="mx-2">|</span><a class="text-uppercase fw-bold me-2" href="">quotes</a></div>
+            <div class="col-lg-5 my-2 my-lg-0 d-flex justify-content-center align-items-center justify-content-lg-end"><a class="text-uppercase fw-bold me-2" href="">gallery</a><span class="mx-2">|</span><span class="text-uppercase fw-bold me-2 qr-trigger" onclick="showQr();">donate</span></div>
           </div>
         </div>
       </div>
@@ -160,6 +160,14 @@
             </ul>
           </div>
           <div class="col-md-3">
+            <h4 class="text-white text-uppercase">what we do</h4>
+            <ul class="list-unstyled footer-links">
+              <li class="py-2" role="presentation"><a class="text-white text-capitalize" href="project.html">project</a></li>
+              <li class="py-2" role="presentation"><a class="text-white text-capitalize" href="project.html">employment</a></li>
+              <li class="py-2" role="presentation"><a class="text-white text-capitalize" href="project.html">partnership</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
             <h4 class="text-white text-uppercase">about us</h4>
             <ul class="list-unstyled footer-links">
               <li role="presentation"><a class="nav-link" href="index.html">Home</a></li>
@@ -169,12 +177,28 @@
               <li role="presentation"><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>
           </div>
+          <div class="col-md-3">
+            <h4 class="text-white text-uppercase">quick links</h4>
+            <ul class="list-unstyled footer-links">
+              <li class="py-2" role="presentation"><a class="text-white text-capitalize" href="privacypolicy.html">privacy policy</a></li>
+              <li class="py-2" role="presentation"><a class="text-white text-capitalize" href="donorpolicy.html">donor privacy policy</a></li>
+              <li class="py-2" role="presentation"><a class="text-white text-capitalize" href="disclaimer.html">disclaimer</a></li>
+              <li class="py-2" role="presentation"><a class="text-white text-capitalize" href="termsofuse.html">terms of use</a></li>
+              <li class="py-2" role="presentation"><a class="text-white text-capitalize" href="mediacenter.html">media center</a></li>
+            </ul>
+          </div>
         </div>
         <div class="row">
           <div class="col-12 text-center d-flex align-items-center justify-content-center developer-credits">
             <p class="mb-0 me-2">Hosted and Powered by </p><a href="https://softwareworld.co.in"><img class="img-fluid dev-branding" src="assets/img/swlogo.svg" alt=""/></a>
           </div>
         </div>
+      </div>
+      <div class="card payment-qr"><i class="mdi mdi-close position-absolute close-btn"></i>
+        <div class="card-body"><img class="img-fluid qr" src="assets/img/paymentqr.png" alt=""/>
+          <div class="loader"></div>
+        </div>
+        <div class="card-footer"><img class="img-fluid" src="assets/img/paymentqrbranding.png" alt=""/></div>
       </div>
     </footer>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>

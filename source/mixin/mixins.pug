@@ -28,6 +28,10 @@ mixin generateFooterLinks(title, url)
     li(role="presentation")
         a.nav-link(href=`${url}`) #{title}
 
+mixin generateQuickLinks(title, url)
+    li.py-2(role="presentation")
+        a.text-white.text-capitalize(href=`${url}`) #{title}
+
 mixin topBanner(img,title)
     .heading-banner.d-flex-justify-content-center.align-items-center(style=`background-image: url(assets/img/${img}.jpg)`)
         .container.text-center
