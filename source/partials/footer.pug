@@ -1,0 +1,42 @@
+footer.bg-dark.text-white.pt-5
+    .container
+        .row
+            .col-md-3
+                h3.text-white #{websiteName}
+                p.small.text-white Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum explicabo voluptatum similique nisi necessitatibus harum tenetur at omnis aliquam rem. Porro possimus minus vitae sed?
+                p.small.text-white.fw-bold
+                    span.mdi.mdi-email  #{emailAddress}
+                p.small.text-white.fw-bold
+                    span.mdi.mdi-phone  +91-#{phoneNumber}
+                ul.list-unstyled.list-inline.footer-icons
+                    each site in socialSites
+                        +generateSocialPages(site.title, site.url)
+            .col-md-3
+                h4.text-white.text-uppercase what we do
+                ul.list-unstyled.footer-links
+                    each option in works
+                        +generateQuickLinks(option.title, option.url)
+            .col-md-3
+                h4.text-white.text-uppercase about us
+                ul.list-unstyled.footer-links
+                    each option in navOptions
+                        +generateFooterLinks(option.title, option.url)
+            .col-md-3
+                h4.text-white.text-uppercase quick links
+                ul.list-unstyled.footer-links
+                    each link in quickLinks
+                        +generateQuickLinks(link.title, link.url)
+
+        .row
+            .col-12.text-center.d-flex.align-items-center.justify-content-center.developer-credits
+                p.mb-0.me-2
+                    | Hosted and Powered by 
+                a(href="https://softwareworld.co.in")
+                    img.img-fluid.dev-branding(src="assets/img/swlogo.svg", alt="")
+    .card.payment-qr
+        i.mdi.mdi-close.position-absolute.close-btn
+        .card-body
+            img.img-fluid.qr(src="assets/img/paymentqr.png", alt="")
+            .loader
+        .card-footer.pb-3
+            img.img-fluid(src="assets/img/paymentqrbranding.png", alt="")
