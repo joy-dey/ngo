@@ -1,0 +1,60 @@
+mixin generateSocialPages(icon, url)
+    li.social-icon-items.list-inline-item
+        a.social-link.text-white(href=`${url}`, title=`Visit Disha Trust on ${icon}`)
+            i(class=`mdi mdi-${icon}`)
+
+mixin generateNavOptions(title, url)
+    li.nav-item(role="presentation")
+        a.nav-link(href=`${url}`) #{title}
+
+mixin generateStats(title, value, icon)
+    .stats-item.col-6.col-md-3.text-center
+        i(class=`mdi mdi-${icon}`)
+        p.h2.fw-bold.stats-counter(data-target=`${value}`) 0
+        p #{title}
+
+mixin generateCauses(title, amount, image, description)
+    .col-md-4.mb-4
+        .card.causes-card
+            img.img-fluid(src=`assets/img/${image}.jpg`)
+            .cause-heading
+                h6.text-capitalize #{title}
+                p.text-capitalize.mb-0 we need to collect #{amount}
+            .overlay-text
+                p #{description}
+                p.h2 #{amount}
+
+mixin generateFooterLinks(title, url)
+    li(role="presentation")
+        a.nav-link(href=`${url}`) #{title}
+
+mixin generateQuickLinks(title, url)
+    li.py-2(role="presentation")
+        a.text-white.text-capitalize(href=`${url}`) #{title}
+
+mixin topBanner(img,title)
+    .heading-banner.d-flex-justify-content-center.align-items-center(style=`background-image: url(assets/img/${img}.jpg)`)
+        .container.text-center
+            h1.text-dark.mb-0 #{title}
+
+mixin generateEvents(img, date, month, title, address, time)
+    .col-lg-6.event-item.mb-4
+        .card.event-card
+            .card-body
+                .row
+                    .col-lg-4
+                        .image-holder.position-relative
+                            img.img-fluid.rounded-circle.event-img(src=`assets/img/${img}`, alt="")
+                            .date-holder
+                                span.d-block.fw-bold #{date}
+                                span #{month}
+                    .col-lg-7.ms-auto
+                        .content.mt-3
+                            h5.card-title #{title}
+                            ul.list-unstyled
+                                li
+                                    i.mdi.mdi-map-marker.me-2
+                                    span #{address}
+                                li.mt-2
+                                    i.mdi.mdi-clock.me-2
+                                    span #{time}
