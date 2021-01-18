@@ -103,8 +103,17 @@ a {
   cursor: pointer;
 }
 
+.main-header .navbar {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
 .main-header .navbar .navbar-brand {
   color: rgba(0, 0, 0, 0.9);
+}
+
+.main-header .navbar .brand-logo {
+  width: 70px;
 }
 
 .main-header .navbar .navbar-toggler {
@@ -470,6 +479,45 @@ main .gallery-section .gallery-image-holder .card .overlay {
 main .gallery-section .gallery-image-holder .card:hover .overlay {
   -webkit-transform: scale(1);
           transform: scale(1);
+}
+
+main .volunteers-section .team-block {
+  position: relative;
+  display: block;
+  text-align: center;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+main .volunteers-section .team-block .volunteers-card {
+  display: block;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+main .volunteers-section .team-block .volunteers-card .image-box img {
+  border-radius: 20px;
+}
+
+main .volunteers-section .team-block .volunteers-card:hover {
+  -webkit-box-shadow: 0 10px 30px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 30px 3px rgba(0, 0, 0, 0.1);
+}
+
+main .volunteers-section .team-block .volunteers-card:hover + .volunteer-info {
+  -webkit-transform: translateY(-90px);
+          transform: translateY(-90px);
+}
+
+main .volunteers-section .team-block .volunteer-info {
+  text-align: center;
+  background-color: #fff;
+  padding: 30px 20px 0;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-bottom: -90px;
 }
 
 footer .footer-icons li .social-link {

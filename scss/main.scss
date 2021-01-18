@@ -63,8 +63,13 @@ a {
         }
     }
     .navbar {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
         .navbar-brand {
             color: rgba($color: #000000, $alpha: 0.9);
+        }
+        .brand-logo {
+            width: 70px;
         }
         .navbar-toggler {
             font-size: 1.4rem;
@@ -347,17 +352,22 @@ main {
             }
         }
     }
+    .volunteers-section {}
 }
 
+
+}
 footer {
     .footer-icons li .social-link {
         font-size: 2rem;
     }
+    
     .footer-links {
         a {
             color: #fff;
         }
     }
+    
     .developer-credits {
         padding: 1rem 0;
         background-color: #1e2125;
@@ -365,6 +375,7 @@ footer {
             width: 100px;
         }
     }
+    
     .payment-qr {
         position: fixed;
         right: 10px;
@@ -404,13 +415,14 @@ footer {
                 animation: loading 1s ease infinite;
             }
         }
+        &:hover {}
     }
 }
-
 @media (max-width: 767px) {
     main .how-to-help .hth-card {
         border: 0 !important;
     }
+    
     main .introduction-section .inner-container {
         border-radius: 15px;
         text-align: center;
@@ -420,17 +432,16 @@ footer {
         }
     }
 }
-
 @keyframes loading {
     100% {
         transform: translate(-50%, -50%) rotate(360deg);
     }
 }
-
 @keyframes pulse {
     from {
         opacity: 0.4;
     }
+    
     to {
         transform: scale(3);
         opacity: 0;
